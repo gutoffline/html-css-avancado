@@ -1,0 +1,213 @@
+.foto-home {
+    height: 200px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 20px yellow;
+}
+
+.saudacao p {
+    font-size: 1.5em;
+    color: #99A;
+    line-height: 1;
+    padding: 2em;
+}
+
+.saudacao-inicio {
+    font-size: 3em;
+    color: #889;
+}
+
+.saudacao-ultima-linha {
+    text-align: right;
+    display: block;
+}
+
+.saudacao strong {
+    font-size: 2em;
+    color: #000;
+}
+
+.saudacao em {
+    color: #851944;
+    font-size: 4em;
+}
+
+.botao-index {
+    font-size: 1.25em;
+    background-color: #851944;
+    color: #FFF;
+    padding: .5em;
+    border: .2em solid black;
+    width: 40ch;
+
+    display: block;
+    text-align: center;
+}
+
+.secao-inicio {
+    padding: 2em;
+}
+
+.secao-inicio h2 {
+    font-size: 3em;
+    text-shadow: 2px 2px #000;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+.trabalhos {
+    background-color: #3C1D3D;
+    border-top: .5em solid #000;
+    border-bottom: .5em solid #000;
+}
+
+.trabalhos h2 {
+    color: #FFF;
+}
+
+.trabalhos ul {
+    overflow: hidden;
+    border: .5em solid black;
+}
+
+.trabalhos li {
+    float: left;
+    width: 33.333%;
+}
+
+.trabalhos img {
+    width: 100%;
+    display: block;
+}
+
+.blog {
+    background-color: #999;
+    color: #FFF;
+    border-bottom: .5em solid #851944;
+}
+
+.blog small {
+    position: relative;
+    top: -2em;
+}
+
+.blog li a {
+    color: #FCF;
+    padding: .5em;
+    display: block;
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 2em;
+}
+
+footer a {
+    color: #F99;
+}
+
+footer h2 {
+    font-size: 3em;
+}
+
+main {
+    width: 100%;
+    padding-bottom: 0;
+    float: none;
+}
+
+
+/*PALAVRAS INÍCIO*/
+.palavra-home{
+    position: absolute;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+    opacity: 0.5;
+}
+
+.eficiencia {
+    top: 20%;
+    left: 75%;
+    transform: rotate(-5deg) scale(1.25);
+}
+
+.boas-praticas {
+    top: 50%;
+    left: 20%;
+    transform: rotate(10deg) scale(1);
+}
+
+.codigo-limpo {
+    top: 45%;
+    left: 10%;
+    transform: rotate(-10deg) scale(0.5);
+}
+
+.css3 {
+    top: 50%;
+    left: 30%;
+    transform: rotate(5deg) scale(1.5);
+}
+
+.html5 {
+    top: 40%;
+    left: 80%;
+    transform: rotate(10deg) scale(1.3);
+}
+
+.javascript {
+    top: 10%;
+    left: 60%;
+    transform: rotate(-5deg) scale(1.2);
+}
+
+.acessibilidade {
+    top: 30%;
+    left: 25%;
+    transform: rotate(-5deg) scale(1.9);
+}
+
+.responsivo {
+    top: 15%;
+    left: 15%;
+    transform: rotate(10deg) scale(1.8);
+}
+
+.otimizacoes {
+    top: 30%;
+    left: 70%;
+    transform: rotate(-5deg) scale(1.5);
+}
+
+.agilidade {
+    top: 10%;
+    left: 30%;
+    transform: rotate(5deg) scale(1.25);
+}
+
+.design {
+    top: 35%;
+    left: 65%;
+    transform: rotate(10deg) scale(1.25);
+}
+
+.banner-twitter {
+    width: 14em;
+    line-height: 1;
+    padding: 1em 0;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3C1D3D;
+    color: white;
+    border: .25em solid black;
+    font-size: .2em;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform-origin: 0 0;
+    transform: translate(6.5754em, -2.4749em) rotate(45deg);
+}
+
+
+
