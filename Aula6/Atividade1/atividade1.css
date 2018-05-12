@@ -25,8 +25,17 @@ img + p{
 }
 
 
+a[title="UOL"]{
+    background-color: pink;
+}
 
+a[href*="terra"]{
+    background-color: orange;
+}
 
+a[href$=".com"]{
+    background-color: red;
+}
 
 
 
