@@ -1,0 +1,252 @@
+#destaque{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 2s linear;
+    transition-timing-function: steps(4, end);
+}
+
+#destaque:hover{
+    transform: rotate(30deg);
+    background-color: yellow;
+}
+
+
+#titulo{
+    color:orange;
+    transition: color 1s , transform 2s;
+    
+}
+
+#titulo:hover{
+    color: pink;
+    transform: translateX(100px);
+}
+
+
+
+/*MENU*/
+.menu{
+    background-color: hotpink;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    list-style: none;
+}
+
+.menu li{
+    transition: 0.5s;
+}
+
+.menu li:hover{
+    transform: translateX(5px);
+}
+
+/*FADE*/
+.fade{
+    opacity:0.5;
+    transition: 0.8s;
+}
+
+.fade:hover{
+    opacity:1;
+}
+
+/*MUDA COR*/
+.muda-cor{
+    margin: 121px 149px;
+    width: 483px;
+    height: 298px;
+    background: #676470;
+    color: #fff;
+    font-family: Lato;
+    font-weight: 900;
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 150px;
+    transition: 0.3s ease;
+}
+
+.muda-cor:hover{
+    background:#53a7ea;
+}
+
+/*AUMENTAR */
+.aumentar{
+    transition: 0.5s;
+}
+.aumentar:hover{
+    transform: scale(1.3);
+}
+
+/*DIMINUIR*/
+.diminuir{
+    transition: 0.5s;
+}
+.diminuir:hover{
+    transform: scale(0.8);
+}
+
+/*GALERIA*/
+.galeria{
+    list-style: none;
+    text-align: center;
+}
+.galeria li{
+    display: inline-block;
+    width: 250px;
+}
+
+.galeria li img{
+    width: 250px;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.galeria li img:hover{
+    transform: scale(0.9);
+    opacity: 1;
+}
+
+/*CIRCULO*/
+.circulo{
+    width: 300px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.circulo:hover{
+    border-radius:50%;
+}
+
+/*BOTÃO*/
+.botao{
+    background-color: crimson;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao:hover{
+    background-color: #af1230;
+}
+
+/*BOTÃO 3D*/
+.botao3d{
+    background-color: aquamarine;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao3d:hover{
+    box-shadow: 1px 1px #53a7ea, 2px 2px #53a7ea, 3px 3px #53a7ea;
+    transform: translateX(-3px);
+}
+
+/*BOTÃO COM BORDA INTERNA*/
+.botao-interno{
+    background-color: #676470;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-interno:hover{
+    box-shadow: inset 0 0 0 5px #53a7ea;
+}
+
+/*BOTÃO COM CLICK*/
+.botao-click {
+  padding: 15px 25px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #999;
+}
+
+.botao-click:hover {
+    background-color: #3e8e41
+}
+
+.botao-click:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/*BOTÃO TEXTO OCULTO*/
+.botao-texto {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 100px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.botao-texto span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.botao-texto span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botao-texto:hover span {
+  padding-right: 10px;
+}
+
+.botao-texto:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/*ANIMAÇÃO*/
+
+@keyframes bailando{
+    15%{ transform: translateX(5px);  }
+    30%{ transform: translateX(-5px); }
+    50%{ transform: translateX(3px);  }
+    65%{ transform: translateX(-3px); }
+    80%{ transform: translateX(2px);  }
+    100%{transform: translateX(0);    }
+}
+
+.animacao{
+    margin: 100px;
+    padding: 50px;
+    background: #676470;
+    color: #fff;
+    font-family: Lato;
+    font-size: 3.4em;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.animacao:hover{
+    animation: bailando 1s ease;
+    animation-iteration-count: 1;
+}
