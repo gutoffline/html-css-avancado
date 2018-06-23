@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Plano de Aula</title>
+        <meta charset="utf-8">
+        <script>
+            function salvando(){
+                var docente = document.getElementById("docente").value;
+                sessionStorage.setItem(docente,docente);
+                var uc = document.getElementById("uc").value;
+                sessionStorage.setItem("UNIDADE",uc);
+                
+                var tabela = document.getElementById("plano-de-aula").innerHTML;
+                
+                tabela += "<tr><td>" + uc + "</td><td>" + docente + "</td></tr>";
+                
+                document.getElementById("plano-de-aula").innerHTML = tabela;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form>
+            UC:
+            <select name="uc" id="uc">
+                <option value="uc1">Manutenção de Computadores</option>
+                <option value="uc2">Redes e servidor</option>
+                <option value="uc3">Programação</option>
+            </select>
+            <input type="text" placeholder="Docente" name="docente" id="docente">
+            <button type="button" id="salvar" onclick="salvando();">Salvar</button>
+        </form>
+        <table id="plano-de-aula">
+            <tr><td>UC</td><td>Docente</td></tr>
+        </table>
+    </body>
+</html>

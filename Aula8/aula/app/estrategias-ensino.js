@@ -1,0 +1,36 @@
+function EstrategiasController($scope) {
+    $scope.itens = [
+      {id:'Introducao', titulo: 'INTRODUÇÃO', desc1: 'teste aaaa', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Video', titulo: 'Apresentação e discussão de vídeo', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Plenaria', titulo: 'Atividade em grupos com apresentação em plenária', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Internalizacao', titulo: 'Atividade individual de internalização', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Brainstorming', titulo: 'Brainstorming', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Mapa', titulo: 'Construção de mapa conceitual', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Contrato', titulo: 'Contrato de aprendizagem ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Debate', titulo: 'Debate ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Diario', titulo: 'Diário de bordo ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Dinamica', titulo: 'Dinâmica de grupo ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Discussao', titulo: 'Discussão de caso ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Dramatizacao', titulo: 'Dramatização ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Moodboard', titulo: 'Elaboração de mood board (quadro de inspiração) ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Mural', titulo: 'Elaboração de mural ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Painel', titulo: 'Elaboração de painel de informações ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Portfolio', titulo: 'Elaboração de portfólio ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Entrevista', titulo: 'Entrevista ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Experimentacao', titulo: 'Experimentação ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Exposicao', titulo: 'Exposição dialogada ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Jogo', titulo: 'Jogo ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Leitura', titulo: 'Leitura de textos ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Palestra', titulo: 'Palestra ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Pesquisa', titulo: 'Pesquisa ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Storytelling', titulo: 'Storytelling ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Simulacao', titulo: 'Simulação ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Projetos', titulo: 'Trabalho com projetos ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Visita', titulo: 'Visita técnica ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Webgincana', titulo: 'Webgincana ', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'Webquest', titulo: 'Webquest', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+      {id:'World', titulo: 'World Café', desc1: 'YYYYYYY', desc2:'AAAAA', recursos:'BBBBB', acessibilidade:'CCCCC'},
+
+    ];
+
+}

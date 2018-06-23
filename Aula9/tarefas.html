@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Tarefas</title>
+    <meta charset="utf-8">
+    <link href="estilo.css" rel="stylesheet">
+    <script>
+        function adicionando(){
+            var novaTarefa = document.getElementById("nova-tarefa").value;
+            var listaDeTarefas = document.getElementById("lista-tarefas");
+            listaDeTarefas.innerHTML += "<li>" + novaTarefa + "</li>";
+            document.getElementById("nova-tarefa").value = "";
+        }
+        
+        function salvando(){
+            var listaDeTarefas = document.getElementById("lista-tarefas");
+            sessionStorage.setItem("TodasAsTarefas", listaDeTarefas.innerHTML);
+            alert("Lista de tarefas salva na sessão");
+        }
+        
+        function carregando(){
+            if(sessionStorage.getItem("TodasAsTarefas")){
+                var listaDeTarefas = document.getElementById("lista-tarefas");
+                listaDeTarefas.innerHTML = sessionStorage.getItem("TodasAsTarefas");
+            }else{
+                alert("não existem tarefas");
+            }
+        }
+        
+        function apagando(){
+            sessionStorage.removeItem("TodasAsTarefas");
+            document.getElementById("lista-tarefas").innerHTML = "";
+            alert("tarefas apagadas da sessão");
+        }
+    </script>
+</head>
+    <body onload="carregando();">
+        <h1>Controle de Tarefas</h1>
+        <hr>
+        <form>
+            <input type="text" id="nova-tarefa" placeholder="Nova tarefa" >
+            <button type="button" onclick="adicionando();"><img src="imagens\add.png"></button>
+        </form>
+        <br>
+        <button type="button" onclick="salvando();"><img src="imagens/salvar.png"></button>
+        <button type="button" onclick="apagando();"><img src="imagens/apagar.png"></button>
+        
+        <ul id="lista-tarefas"></ul>
+    </body>
+</html>
+
+
+
+
+
