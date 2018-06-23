@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>FlexBox</title>
+        <meta charset="utf-8">
+        <link href="estilo.css" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <div id="mapa"></div>
+        
+        <div class="container">
+            <img src="imagens/foto1.jpg">
+            <img src="imagens/foto1.jpg">
+            <img src="imagens/foto1.jpg">
+            <img src="imagens/foto2.jpg" class="menor">
+        </div>
+        <h2>Destaques</h2>
+        <ul class="destaques">
+            <li><img src="imagens/foto3.jpg"></li>
+            <li><img src="imagens/foto4.jpg"></li>
+            <li><img src="imagens/foto5.jpg"></li>
+        </ul>
+        
+        <h2>Últimas notícias</h2>
+        <ul class="ultimas-noticias">
+            <li><img src="imagens/foto1.jpg"><a href="#">Click aqui para ler a notícia completa</a></li>
+            <li><img src="imagens/foto2.jpg"><a href="#">Click aqui para ler a notícia completa</a></li>
+            <li><img src="imagens/foto3.jpg"><a href="#">Click aqui para ler a notícia completa</a></li>
+            <li><img src="imagens/foto4.jpg"><a href="#">Click aqui para ler a notícia completa</a></li>
+            <li><img src="imagens/foto5.jpg"><a href="#">Click aqui para ler a notícia completa</a></li>
+        </ul>
+        
+        <script>
+            function localizacao() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(posicao);
+                } else { 
+                    console.log("Geolocalização não é suportada pelo navegador.");
+                }
+            }
+
+            function posicao(position) {
+                console.log("Latitude: " + position.coords.latitude);
+                console.log("Longitude: " + position.coords.longitude);
+                
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                
+                /*
+                var link_mapa = "<a target='_blank' href='https://www.google.com/maps/?q=" + latitude + "," + longitude + "'>Mapa</a>";
+                
+                document.querySelector("body").innerHTML += link_mapa;
+                */
+                var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=" + latitude + "," + longitude + "&zoom=14&size=500x300&sensor=false";
+                document.querySelector("#mapa").innerHTML = "<img src='" + img_url + "'>";
+            }
+
+            localizacao();
+        </script>
+    </body>
+</html>
